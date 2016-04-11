@@ -47,6 +47,7 @@ func creatTeams() {
     
     for player in rookieList {
         
+        //Add rookies to each team
         if dragons.count < numberOfPlayersPerTeam / 2 {
             dragons.append(player)
         } else if sharks.count < numberOfPlayersPerTeam / 2  {
@@ -57,7 +58,7 @@ func creatTeams() {
     }
     
     for player in proList {
-        
+        //Add pros to each team
         if dragons.count < numberOfPlayersPerTeam  {
             dragons.append(player)
         } else if sharks.count < numberOfPlayersPerTeam  {
